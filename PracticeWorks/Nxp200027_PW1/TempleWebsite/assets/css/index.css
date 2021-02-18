@@ -1,0 +1,20 @@
+.bg-teal{
+    background-color:steelblue;
+}
+.navbar-nav.navbar-r20{
+    position:absolute;
+    left: 10%;
+}
+
+.navbar-nav .navbar-r50{
+    position:absolute;
+    left:50%;
+}
+
+.bg-ba{
+    background-color:blanchedalmond;
+}
+
+.navbar.sheight{
+    max-height: 50px
+}

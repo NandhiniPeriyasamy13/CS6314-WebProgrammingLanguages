@@ -1,0 +1,436 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Temple Website</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../css/index.css">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+</head>
+<body class="fs">
+<header>
+    <nav class="navbar navbar-expand-lg  bg-mblue">
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto"></ul>
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link text-white"  href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd"
+                                  d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+                            <path fill-rule="evenodd"
+                                  d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+                        </svg>
+                        Logout</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-person-circle" viewBox="0 0 16 16">
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0z"/>
+                            <path fill-rule="evenodd"
+                                  d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8zm8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1z"/>
+                        </svg>
+                        Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="#">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                             class="bi bi-star-fill" viewBox="0 0 16 16">
+                            <path d="M3.612 15.443c-.386.198-.824-.149-.746-.592l.83-4.73L.173 6.765c-.329-.314-.158-.888.283-.95l4.898-.696L7.538.792c.197-.39.73-.39.927 0l2.184 4.327 4.898.696c.441.062.612.636.283.95l-3.523 3.356.83 4.73c.078.443-.36.79-.746.592L8 13.187l-4.389 2.256z"/>
+                        </svg>
+                        Favorites</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-slateblue py-4">
+        <a class="navbar-brand text-white ml-4" href="#">
+            <h2 class="font">Share your travels</h2></a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active mx-4">
+                    <a class="nav-link text-white" href="#">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link text-white" href="#">About</a>
+                </li>
+                <li class="nav-item mx-4">
+                    <a class="nav-link text-white" href="#">Contact</a>
+                </li>
+                <li class="nav-item dropdown mx-4">
+                    <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown">Browse
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Continents</a>
+                        <a class="dropdown-item" href="#">Countries</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline pr-4">
+                <input class="form-control mr-sm-2 fs pl-4" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-pink my-2 my-sm-0 fs py-3" type="submit">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </nav>
+</header>
+<br>
+<br>
+<div class="pl-5 pr-5">
+    <div class="grid">
+        <div class="row">
+            <div class="col-md-2">
+                <div class="card border-mblue">
+                    <div class="card-header text-white border-mblue bg-mblue" id="continent">
+                        Continents
+                    </div>
+                    <ul class="list-group list-group-flush text-primary">
+                        <li class="list-group-item border-mblue">Africa</li>
+                        <li class="list-group-item border-mblue">Asia</li>
+                        <li class="list-group-item border-mblue">Europe</li>
+                        <li class="list-group-item border-mblue">North America</li>
+                        <li class="list-group-item border-mblue">Oceania</li>
+                        <li class="list-group-item border-mblue">South America</li>
+                    </ul>
+                </div>
+                <br>
+                <div class="card border-mblue">
+                    <div class="card-header text-white border-mblue bg-mblue" id="countries">
+                        Popular Countries
+                    </div>
+                    <ul class="list-group list-group-flush text-primary">
+                        <li class="list-group-item border-mblue">Canada</li>
+                        <li class="list-group-item border-mblue">France</li>
+                        <li class="list-group-item border-mblue">Italy</li>
+                        <li class="list-group-item border-mblue">Germany</li>
+                        <li class="list-group-item border-mblue">Greece</li>
+                        <li class="list-group-item border-mblue">Hungary</li>
+                        <li class="list-group-item border-mblue">Spain</li>
+                        <li class="list-group-item border-mblue">Ganna</li>
+                        <li class="list-group-item border-mblue">United Kingdom</li>
+                        <li class="list-group-item border-mblue">United States</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-10">
+                <div class="row">
+                    <div class="col-md-8">
+                        <div>
+                            <img src="../images/temple.jpg" class="w-100" alt="Temple images"/>
+                        </div>
+                        <div>
+                            <p>Located on the Western perimeter of Agora in Athens. Built in 460-415 BCE, it is the best
+                                preserved temple of antiquity</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h1>Temple of Hephaistos</h1>
+                        <div class="card">
+                            <div class="card-body">
+                                <p><span>By: </span><span class="text-primary">Ellie Sullivan</span></p>
+                                <p><span>Country: </span><span class="text-primary">Greece</span></p>
+                                <p><span>City: </span><span class="text-primary">Athens</span></p>
+                                <p>Taken on : August8,2017</p>
+                            </div>
+                        </div>
+                        <br>
+                        <div class="btn-group btn-group-lg d-flex">
+                            <a href="#" class="btn bg-gb mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="btn bg-gb mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-cloud-download-fill" viewBox="0 0 16 16">
+                                    <path fill-rule="evenodd"
+                                          d="M8 0a5.53 5.53 0 0 0-3.594 1.342c-.766.66-1.321 1.52-1.464 2.383C1.266 4.095 0 5.555 0 7.318 0 9.366 1.708 11 3.781 11H7.5V5.5a.5.5 0 0 1 1 0V11h4.188C14.502 11 16 9.57 16 7.773c0-1.636-1.242-2.969-2.834-3.194C12.923 1.999 10.69 0 8 0zm-.354 15.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 14.293V11h-1v3.293l-2.146-2.147a.5.5 0 0 0-.708.708l3 3z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="btn bg-gb mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-file-person-fill" viewBox="0 0 16 16">
+                                    <path d="M12 0H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm-1 7a3 3 0 1 1-6 0 3 3 0 0 1 6 0zm-3 4c2.623 0 4.146.826 5 1.755V14a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-1.245C3.854 11.825 5.377 11 8 11z"/>
+                                </svg>
+                            </a>
+                            <a href="#" class="btn bg-gb mr-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                     class="bi bi-chat-left-fill" viewBox="0 0 16 16">
+                                    <path d="M2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z"/>
+                                </svg>
+                            </a>
+                        </div>
+                        <br>
+                        <br>
+                        <div>
+                            <h4>Tags</h4>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <div class="card-body">
+                                <a href="#" class="badge badge-mb">Garden</a>
+                                <a href="#" class="badge badge-mb">Valley</a>
+                                <a href="#" class="badge badge-mb">Hill</a>
+                                <a href="#" class="badge badge-mb">Sunshine</a>
+                                <a href="#" class="badge badge-mb">Ancient</a>
+                                <a href="#" class="badge badge-mb">Temple</a>
+                                <a href="#" class="badge badge-mb">Heritage</a>
+                                <a href="#" class="badge badge-mb">Architecture</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4>Related Photos</h4>
+                </div>
+                <div class="row">
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <img class="card-img-top pad-10" src="../images/Fig-1.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <p class="card-text text-center">Welcome</p>
+                                <div class="pl">
+                                    <a href="#" class="btn btn-primary fs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor"
+                                             class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                        </svg>
+                                        View</a>
+                                    <a href="#" class="btn btn-pink fs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor"
+                                             class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                        </svg>
+                                        Favorites</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <img class="card-img-top pad-10" src="../images/Fig-2.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="pl">
+                                    <p class="card-text text-center">Welcome</p>
+                                    <a href="#" class="btn btn-primary fs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor"
+                                             class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                        </svg>
+                                        View</a>
+                                    <a href="#" class="btn btn-pink fs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor"
+                                             class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                        </svg>
+                                        Favorites</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <img class="card-img-top pad-10" src="../images/Fig-3.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="pl">
+                                    <p class="card-text text-center">Roman Agora</p>
+                                    <a href="#" class="btn btn-primary fs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor"
+                                             class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                        </svg>
+                                        View</a>
+                                    <a href="#" class="btn btn-pink fs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor"
+                                             class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                        </svg>
+                                        Favorites</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <div class="card">
+                            <img class="card-img-top pad-10" src="../images/Fig-4.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <div class="pl">
+                                    <p class="card-text text-center">Welcome</p>
+                                    <a href="#" class="btn btn-primary fs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor"
+                                             class="bi bi-eye-fill" viewBox="0 0 16 16">
+                                            <path d="M10.5 8a2.5 2.5 0 1 1-5 0 2.5 2.5 0 0 1 5 0z"/>
+                                            <path d="M0 8s3-5.5 8-5.5S16 8 16 8s-3 5.5-8 5.5S0 8 0 8zm8 3.5a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7z"/>
+                                        </svg>
+                                        View</a>
+                                    <a href="#" class="btn btn-pink fs">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                             fill="currentColor"
+                                             class="bi bi-heart-fill" viewBox="0 0 16 16">
+                                            <path fill-rule="evenodd"
+                                                  d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                                        </svg>
+                                        Favorites</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<br>
+<footer class="bg-slateblue text-center text-lg-start text-white">
+    <!-- Grid container -->
+    <div class="row p-5">
+        <div class="col-md-6 pl-2">
+            <div class="container text-left">
+                <h3>Share your Travels</h3>
+                <p class="mt-4"> This is a case study from textbook, Fundamentals of Web Development. This book
+                    is published by Pearson Ed, and is the only textbook that covers the essentials of the entire
+                    field of contemporary web development</p>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-6 text-left">
+                    <div class="container">
+                        <h4>Headquaters</h4>
+                        <div class="mt-4">Mount Royal University</div>
+                        <div>4825, Mount royal Gate SW</div>
+                        <div>Calgary, Canada, 564778</div>
+                    </div>
+                </div>
+                <div class="col-md-6 text-left">
+                    <div class="container">
+                        <h4>Follow Us</h4>
+                        <div class="mt-4">
+                            <button type="button" class="btn btn-lg glyph-camera">
+                                <span class="glyphicon glyphicon-camera" aria-hidden="true"></span>
+                            </button>
+                            <button type="button" class="btn btn-lg glyph-user">
+                                <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                            </button>
+                            <button type="button" class="btn btn-lg glyph-label">
+                                <span class="glyphicon glyphicon-tags" aria-hidden="true"></span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-lg glyph-bookmark">
+                                <span class="glyphicon glyphicon-bookmark" aria-hidden="true"></span>
+                            </button>
+                            <button type="button" class="btn btn-default btn-lg glyph-fire">
+                                <span class="glyphicon glyphicon-fire" aria-hidden="true"></span>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div>
+                <h4 class="text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-pencil" viewBox="0 0 16 16">
+                        <path d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5L13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175l-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"/>
+                    </svg>
+                    Recent Posts
+                </h4>
+            </div>
+            <br>
+            <div>
+                <ul class="list-unstyled">
+                    <li class="media">
+                        <img class="mr-3 img-circle" src="../images/Footer-1.jpg" alt="Generic placeholder image">
+                        <div class="container">
+                            <div class="media-body text-left">
+                                <div class="text-recent">Calgary in the snow</div>
+                                <div>5 minutes ago</div>
+                            </div>
+                            <hr/>
+                        </div>
+                    </li>
+                    <li class="media my-4">
+                        <img class="mr-3 img-circle" src="../images/Footer-2.jpg" alt="Generic placeholder image">
+                        <div class="container">
+                            <div class="media-body text-left">
+                                <div class="text-recent">Mountain climbing</div>
+                                <div>11 minutes ago</div>
+                            </div>
+                            <hr/>
+                        </div>
+
+                    </li>
+                    <li class="media">
+                        <img class="mr-3 img-circle" src="../images/Footer-3.jpg" alt="Generic placeholder image">
+                        <div class="container">
+                            <div class="media-body text-left">
+                                <div class="text-recent">Nova Scuba</div>
+                                <div>23 minutes ago</div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div>
+                <h4 class="text-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                         class="bi bi-envelope" viewBox="0 0 16 16">
+                        <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V4zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1H2zm13 2.383l-4.758 2.855L15 11.114v-5.73zm-.034 6.878L9.271 8.82 8 9.583 6.728 8.82l-5.694 3.44A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.739zM1 11.114l4.758-2.876L1 5.383v5.73z"/>
+                    </svg>
+                    Contact us
+                </h4>
+            </div>
+            <br>
+            <div>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control pad-15 fs" id="name" placeholder="Enter name...">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control pad-15 fs" id="email"
+                               placeholder="Enter Email ...">
+                    </div>
+                    <div class="mb-3">
+                        <textarea class="form-control pad-15 fs" id="message"
+                                  placeholder="Enter message ..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-pink btn-block fs py-3">Submit
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- Copyright -->
+    <div class="text-center p-3 text-white bg-mblue">
+        Copyright © 2021 : CS-6314 - NXP200027
+    </div>
+    <!-- Copyright -->
+</footer>
+</body>
+</html>
